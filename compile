@@ -1,0 +1,10 @@
+touch KSpec.kt
+
+for value in `ls src/`;
+do
+    cat src/$value >> KSpec.kt
+done
+
+rm -rf export
+mkdir export
+mv KSpec.kt export/
